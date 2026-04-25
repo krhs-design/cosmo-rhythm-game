@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(Get-NetIPAddress -AddressFamily IPv4 | Where-Object { $_.InterfaceAlias -notmatch \"Loopback\" -and $_.IPAddress -notmatch \"^169\" } | Select-Object InterfaceAlias, IPAddress)"
+    ]
+  }
+}
